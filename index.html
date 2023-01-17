@@ -8,6 +8,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="./index.css" /> -->
   </head>
@@ -48,17 +52,36 @@
               democracy and redirecting attention from other pressing national
               issues.
             </h3>
-            <h3>Full statement: <a href="">https://bit.ly/LSKStatement</a></h3>
-            <h3>
-              AS THE LAW SOCIETY OF KENYA, WE ARE ASTOUNDED BY THIS MOVE BY THE
-              PRESIDENT GIVEN THAT THE AMENDMENTS WILL AFFECT THE OVERALL
-              STRUCTURE OF PARLIAMENT AND THE EXECUTIVE.
-            </h3>
-            <h2>-ERIC THEURI, PRESIDENT OF THE LAW SOCIETY OF KENYA</h2>
+            <div class="table-content-container">
+              <div>
+                <h3>
+                  Full statement: <a href="">https://bit.ly/LSKStatement</a>
+                </h3>
+                <h3>
+                  AS THE LAW SOCIETY OF KENYA, WE ARE ASTOUNDED BY THIS MOVE BY
+                  THE PRESIDENT GIVEN THAT THE AMENDMENTS WILL AFFECT THE
+                  OVERALL STRUCTURE OF PARLIAMENT AND THE EXECUTIVE.
+                </h3>
+                <h2>-ERIC THEURI, PRESIDENT OF THE LAW SOCIETY OF KENYA</h2>
+              </div>
+              
+            </div>
           </div>
           <div class="paragraph-one-image">
             <img src="images/lsk-chair.png" alt="" />
+            
           </div>
+        </div>
+        <div class="content-container">
+          <div>
+            <h2>INSIDE</h2>
+            <i class="bx bx-right-arrow-circle bx-lg"></i>
+          </div>
+          <ul>
+            <li>Courtesy Call to the Governor of Nairobi County</li>
+            <li>Lsk Continuing Professional Development Calendar - 2023</li>
+            <li>opportunities for advocates</li>
+          </ul>
         </div>
         <div class="footer-text">
           <a href="www.lsk.or.ke">WWW.LSK.OR.KE</a>
@@ -330,13 +353,12 @@
       flex-direction: column;
       align-items: center;
       align-items: stretch;
-      
     }
 
-    .main-page-container{
+    .main-page-container {
       background-color: rgb(255, 247, 236);
-      margin-bottom:10px;
-      border:1px solid lightgray;
+      margin-bottom: 10px;
+      border: 1px solid lightgray;
     }
 
     .header-container div {
@@ -445,6 +467,7 @@
     }
 
     .paragraph-one-image img {
+      height:auto;
       width: 100%;
     }
 
@@ -454,6 +477,27 @@
       position: relative;
       left: 120px;
       bottom: 90px;
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: space-between;
+      width:800px;
+      margin-top: 50px;
+    }
+
+    .content-container h2 {
+      font-size:38px;
+      margin-bottom:30px;
+    }
+
+    .content-container ul{
+      width:600px;
+    }
+
+    .content-container ul li{
+      font-size:33px;
+      font-family: "Maiandra GD";
     }
 
     .paragraph-two-container {
@@ -605,17 +649,17 @@
       width: 100%;
     }
 
-    .footer-text{
-        display:flex;
-        justify-content:space-between;
-        width:98%;
-        margin:10px;  
-      }
+    .footer-text {
+      display: flex;
+      justify-content: space-between;
+      width: 98%;
+      margin: 10px;
+    }
 
-      .footer-text a{
-        color:black;
-        text-decoration: none;
-      }
+    .footer-text a {
+      color: black;
+      text-decoration: none;
+    }
 
     /*  start of media queries */
 
@@ -624,6 +668,27 @@
         display: flex;
         flex-direction: column-reverse;
       }
+
+      .content-container {
+      display: flex;
+      justify-content: space-between;
+      width:600px;
+      margin: 10px;
+    }
+
+    .content-container h2 {
+      font-size:38px;
+      margin-bottom:30px;
+    }
+
+    .content-container ul{
+      width:400px;
+    }
+
+    .content-container ul li{
+      font-size:33px;
+      font-family: "Maiandra GD";
+    }
     }
 
     @media (max-width: 600px) {
@@ -674,8 +739,28 @@
         font-weight: 200;
         font-size: 12px;
       }
+      .content-container {
+      display: flex;
+      flex-direction:column;
+      justify-content: space-between;
+      max-width:450px;
+      width:100%;
+      margin: 10px;
+    }
 
-      
+    .content-container h2 {
+      font-size:28px;
+      margin-bottom:30px;
+    }
+
+    .content-container ul{
+      width:300px;
+    }
+
+    .content-container ul li{
+      font-size:23px;
+      font-family: "Maiandra GD";
+    }
     }
   </style>
 </html>
