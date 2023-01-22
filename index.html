@@ -31,7 +31,7 @@
       </div>
       <div class="title-container">
         <h1>THE LSK INSIGHT</h1>
-        <h3>
+        <h3 class="subtitle-container">
           STATEMENT BY THE LAW SOCIETY OF KENYA ON THE PRESIDENT’S MEMO TO AMEND
           THE CONSTITUTION
         </h3>
@@ -117,7 +117,8 @@
               members to submit topics for consideration in the development of
               the 2023 Continuing Professional Development (CPD) Calendar. The
               Council through its Committee on CPD considered the proposals and
-              came up with the Calendar which can be accessed via the link below: 
+              came up with the Calendar which can be accessed via the link
+              below:
             </h3>
             <a href="">CPD Calendar 2023.</a>
             <h3>
@@ -317,9 +318,11 @@
           </h3>
           <h3>Apply for your scholarship <a href="">here</a>.</h3>
           <h3>
-            For more information please contact <span>Mr Samson Kithika Mbondo,
-              Business Development Manager of Unicaf Kenya at 0714655897 or email
-              at s.mbondo@kenya.unicaf.org</span>
+            For more information please contact
+            <span
+              >Mr Samson Kithika Mbondo, Business Development Manager of Unicaf
+              Kenya at 0714655897 or email at s.mbondo@kenya.unicaf.org</span
+            >
           </h3>
         </div>
       </div>
@@ -352,7 +355,20 @@
     }
 
     @import url(//db.onlinewebfonts.com/c/423c5077bf2221d0f77f1fb9cb97d92d?family=Copperplate);
-    @font-face {font-family: "Copperplate"; src: url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.eot"); src: url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.woff") format("woff"), url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.svg#Copperplate") format("svg"); }
+    @font-face {
+      font-family: "Copperplate";
+      src: url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.eot");
+      src: url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.svg#Copperplate")
+          format("svg");
+    }
 
     * {
       padding: 0;
@@ -373,9 +389,9 @@
       overflow-x: hidden;
       margin-bottom: 10px;
       border: 1px solid lightgray;
-      background-image:url("images/footer-img.png");
+      background-image: url("images/footer-img.png");
       background-repeat: no-repeat;
-      background-position:right bottom;
+      background-position: right bottom;
     }
 
     .header-container {
@@ -450,34 +466,34 @@
       width: 100%;
       text-align: center;
       /* font-family: "Maiandra GD"; */
-      font-family:"Copperplate";
-      font-weight:800;
+      font-family: "Copperplate";
+      font-weight: 800;
       font-size: 96px;
     }
 
-    .title-container h3 {
+    /* .title-container h3 {
       font-family: "Poppins", sans-serif;
       max-width: 1100px;
       width: 100%;
       text-align: center;
-      font-size: 32px;
+      font-size: 22px;
       font-weight: 900;
-    }
+    } */
 
     .paragraph-one {
       display: flex;
       justify-content: center;
+      margin: 10px;
     }
 
     .paragraph-one-text {
       max-width: 500px;
       width: 100%;
-      /* margin: 10px; */
     }
 
     .paragraph-one-text h3 {
-      font-size: 18px;
-      font-weight: 300;
+      font-size: 16px;
+      font-weight: 500;
       text-align: justify;
       margin-bottom: 20px;
       max-width: 500px;
@@ -490,12 +506,16 @@
     }
 
     .paragraph-one-image {
+      display: flex;
       width: 100%;
+      padding: 0px 10px;
     }
 
     .paragraph-one-image img {
+      margin: 20px 0px;
       height: auto;
       width: 100%;
+      z-index: 100;
     }
 
     .copy-image img {
@@ -510,13 +530,20 @@
       display: flex;
     }
 
-    .table-content-quote{
+    .table-content-quote {
       font-style: italic;
+      font-size:16px;
     }
 
     .table-content-container div {
       z-index: 100;
     }
+
+    .table-content-container h2{
+      font-size:16px;
+    }
+
+
 
     .content-background {
       background-image: url("images/Untitled_design-removebg-preview.png");
@@ -536,7 +563,7 @@
 
     .content-container {
       display: flex;
-      justify-content:flex-start;
+      justify-content: flex-start;
       max-width: 800px;
       width: 100%;
       height: 300px;
@@ -553,6 +580,7 @@
     .content-container h2 {
       font-size: 38px;
       margin-bottom: 30px;
+      font-family: "Copperplate";
     }
 
     .content-container ul {
@@ -561,19 +589,21 @@
       justify-content: center;
       padding-left: 30px;
       max-width: 600px;
-      width:100%;
+      width: 100%;
     }
 
     .content-container ul li {
       font-size: 23px;
       width: 90%;
-      font-family: "Maiandra GD";
+      margin: 5px 0px;
+      font-family: "Copperplate";
     }
 
     .paragraph-two-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 10px;
     }
 
     .paragraph-two-container h1 {
@@ -593,21 +623,20 @@
     .paragraph-two-text {
       max-width: 900px;
       width: 100%;
-      padding: 1px;
     }
 
     .paragraph-two-text h3 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       text-align: justify;
       max-width: 700px;
       width: 100%;
     }
 
-    .paragraph-two-text a{
+    .paragraph-two-text a {
       text-decoration: underline;
       font-weight: 800;
-      color:black;
+      color: black;
     }
 
     .paragraph-three {
@@ -636,7 +665,7 @@
     }
 
     .paragraph-three-text h3 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       text-align: justify;
       margin-bottom: 20px;
@@ -677,27 +706,27 @@
     .paragraph-four-text-container {
       display: flex;
       justify-content: center;
-      margin: 20px;
+      margin: 10px;
     }
 
     .paragraph-four-text-container-2 {
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
-      margin: 20px;
-    }
-
-    .paragraph-four-text {
-      display:flex;
-      flex-direction: column;
-      justify-content:center;
-      max-width: 1100px;
-      width: 100%;
       margin: 10px;
     }
 
+    .paragraph-four-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1100px;
+      width: 100%;
+      margin: 1px;
+    }
+
     .paragraph-four-text h3 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       text-align: justify;
       margin-bottom: 20px;
@@ -705,10 +734,10 @@
       width: 100%;
     }
 
-    .paragraph-four-text h3 a{
+    .paragraph-four-text h3 a {
       text-decoration: underline;
       font-weight: 800;
-      color:black;
+      color: black;
     }
 
     .paragraph-five-container {
@@ -717,6 +746,7 @@
       justify-content: space-around;
       align-items: center;
       width: auto;
+      margin: 10px;
     }
 
     .paragraph-five-container img {
@@ -726,22 +756,20 @@
     }
 
     .paragraph-five-text h3 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       text-align: justify;
-      margin-bottom: 20px;
       max-width: 700px;
+      margin: 10px 0px;
       width: 100%;
     }
 
-    .paragraph-five-text h3 a{
-
+    .paragraph-five-text h3 a {
       font-weight: 800;
-      color:black;
+      color: black;
     }
 
-
-    .paragraph-five-text h3 span{
+    .paragraph-five-text h3 span {
       font-weight: 900;
     }
 
@@ -751,12 +779,11 @@
       width: 98%;
       margin: 10px;
     }
-    
+
     .footer-text a {
       color: black;
       text-decoration: none;
     }
-    
 
     /*  start of media queries */
 
@@ -782,6 +809,11 @@
       .paragraph-one {
         display: flex;
         flex-direction: column-reverse;
+      }
+
+      .paragraph-one-image {
+        margin: 0px 0px;
+        padding: 0px 0px;
       }
 
       .content-background {
@@ -818,7 +850,6 @@
       .content-container ul li {
         font-size: 27px;
         width: 80%;
-        font-family: "Maiandra GD";
       }
     }
 
@@ -826,6 +857,16 @@
       .title-container h1 {
         font-size: 52px;
       }
+
+      .subtitle-container {
+        font-family: "Poppins", sans-serif;
+        max-width: 1100px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 900;
+      }
+
       .paragraph-two {
         display: flex;
         flex-direction: column;
@@ -880,8 +921,8 @@
         background-size: 600px 1000px;
         background-repeat: no-repeat;
         max-width: 800px;
-        width:100%;
-        overflow:hidden;
+        width: 100%;
+        overflow: hidden;
         height: 700px;
         display: flex;
         align-items: center;
@@ -894,17 +935,17 @@
 
       .content-container {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: flex-start;
         max-width: 650px;
         width: 100%;
         margin: 10px;
       }
 
-      .content-container div{
-        display:flex;
+      .content-container div {
+        display: flex;
         flex-direction: row;
-        align-items:center;
+        align-items: center;
       }
 
       .content-container h2 {
@@ -919,8 +960,7 @@
       }
 
       .content-container ul li {
-        font-size: 23px;
-        font-family: "Maiandra GD";
+        font-size: 20px;
         width: 80%;
         list-style-type: style;
       }
